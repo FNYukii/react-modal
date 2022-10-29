@@ -5,13 +5,13 @@ import TopScreen from './screens/TopScreen'
 function App() {
 
     return (
-        <div>
+        <div className='xl:width-xl w-full mx-auto'>
+            
             <BrowserRouter>
 
                 <Routes>
                     <Route path='/' element={<TopScreen />} />
                 </Routes>
-
             </BrowserRouter>
         </div>
     )
