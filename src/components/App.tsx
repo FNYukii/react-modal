@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import AboutScreen from './screens/AboutScreen'
 import TopScreen from './screens/TopScreen'
 
 
@@ -11,6 +12,7 @@ function App() {
 
                 <Routes>
                     <Route path='/' element={<TopScreen />} />
+                    <Route path='/about' element={<AboutScreen />} />
                 </Routes>
             </BrowserRouter>
         </div>
