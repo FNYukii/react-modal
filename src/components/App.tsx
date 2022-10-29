@@ -1,8 +1,18 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import TopScreen from './screens/TopScreen'
+
+
 function App() {
-    
+
     return (
         <div>
-            <h1>hello</h1>
+            <BrowserRouter>
+
+                <Routes>
+                    <Route path='/' element={<TopScreen />} />
+                </Routes>
+
+            </BrowserRouter>
         </div>
     )
 }
