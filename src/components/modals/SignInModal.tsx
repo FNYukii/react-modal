@@ -9,7 +9,7 @@ function SignInModal() {
     return (
         <div className="z-30 fixed top-0 left-0 w-full h-full flex justify-center items-center">
 
-            <div onClick={() => navigate(-1)} className="w-full h-full bg-black/80"></div>
+            <div onClick={() => navigate(-1)} className="w-full h-full bg-black/20"></div>
 
             <div className='absolute bg-white p-8'>
 
