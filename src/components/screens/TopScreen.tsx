@@ -1,4 +1,4 @@
-import Header from "../Header"
+import Header from "../parts/Header"
 import { Link, useLocation } from "react-router-dom"
 
 function TopScreen() {
