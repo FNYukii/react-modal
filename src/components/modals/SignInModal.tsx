@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom"
+import { MdOutlineClose } from "react-icons/md"
+
 
 function SignInModal() {
 
@@ -10,13 +12,18 @@ function SignInModal() {
             <div onClick={() => navigate(-1)} className="w-full h-full bg-black/80"></div>
 
             <div className='absolute bg-white p-8'>
-                <p className="text-3xl font-bold">Sign in</p>
 
-                <input type="text" placeholder="Email" className="mt-5 w-full p-2 border"/>
-                <input type="text" placeholder="Password" className="mt-5 w-full p-2 border"/>
+                <button onClick={() => navigate(-1)} className="hover:opacity-60">
+                    <MdOutlineClose className="text-2xl text-gray-500" />
+                </button>
 
-                <div className="mt-5 flex justify-end">
-                    <button className="py-2 px-4 bg-black text-white hover:opacity-70 transition">Sign in</button>
+                <p className="mt-6 text-3xl font-bold">Sign in</p>
+
+                <input type="text" placeholder="Email" className="mt-6 w-full p-2 border" />
+                <input type="text" placeholder="Password" className="mt-6 w-full p-2 border" />
+
+                <div className="mt-6 flex justify-end">
+                    <button className="py-2 px-4 bg-black text-white hover:opacity-60 transition">Sign in</button>
                 </div>
             </div>
         </div>
