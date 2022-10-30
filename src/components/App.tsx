@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import AboutScreen from './screens/AboutScreen'
-import ModalScreen from './screens/ModalScreen'
+import ImageModal from './modals/ImageModal'
 import TopScreen from './screens/TopScreen'
 
 function App() {
@@ -14,11 +14,9 @@ function App() {
     const backgroundPath: string | undefined = state?.backgroundPath ?? "/"
 
     // Modalの表示のboolean
-    const isShowForestModal = currentPath === "/images/forest"
-    const isShowRiverModal = currentPath === "/images/river"
-    const isShowMountainsModal = currentPath === "/images/mountains"
+    const isShowImageModal = currentPath === "/image"
 
-    const isShowModal = isShowForestModal || isShowRiverModal || isShowMountainsModal ? true : false
+    const isShowModal = isShowImageModal ? true : false
 
     return (
         <div className='xl:width-xl w-full mx-auto'>
@@ -31,7 +29,7 @@ function App() {
 
             <Routes location={isShowModal ? undefined : ""}>
 
-                <Route path='/images/:imageName' element={<ModalScreen />} />
+                <Route path='/image' element={<ImageModal />} />
                 <Route path='*' element={<div></div>} />
             </Routes>
         </div>
