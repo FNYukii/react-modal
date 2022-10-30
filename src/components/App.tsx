@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import AboutScreen from './screens/AboutScreen'
 import ImageModal from './modals/ImageModal'
 import TopScreen from './screens/TopScreen'
+import SignInModal from './modals/SignInModal'
 
 function App() {
 
@@ -15,8 +16,9 @@ function App() {
 
     // Modalの表示のboolean
     const isShowImageModal = currentPath === "/image"
+    const isShowSignInModal = currentPath === "/sign-in"
 
-    const isShowModal = isShowImageModal ? true : false
+    const isShowModal = isShowImageModal || isShowSignInModal ? true : false
 
     return (
         <div className='xl:width-xl w-full mx-auto'>
@@ -30,6 +32,7 @@ function App() {
             <Routes location={isShowModal ? undefined : ""}>
 
                 <Route path='/image' element={<ImageModal />} />
+                <Route path='/sign-in' element={<SignInModal />} />
                 <Route path='*' element={<div></div>} />
             </Routes>
         </div>

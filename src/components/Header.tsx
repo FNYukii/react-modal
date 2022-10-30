@@ -1,6 +1,8 @@
-import { NavLink } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 
 function Header() {
+
+    const location = useLocation()
 
     return (
         <header className="flex justify-between p-3 items-center">
@@ -17,6 +19,10 @@ function Header() {
 
                     <li>
                         <NavLink to='/about' className="hover:underline">About</NavLink>
+                    </li>
+
+                    <li>
+                        <Link to='/sign-in' state={{ backgroundPath: location.pathname }} className="py-2 px-4 bg-black text-white hover:opacity-70">Sign in</Link>
                     </li>
                 </ul>
             </div>
