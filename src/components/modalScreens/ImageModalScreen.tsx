@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 
-function ImageModal() {
+function ImageModalScreen() {
 
     const navigate = useNavigate()
 
@@ -16,4 +16,4 @@ function ImageModal() {
     )
 }
 
-export default ImageModal
+export default ImageModalScreen

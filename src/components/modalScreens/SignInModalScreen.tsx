@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom"
 import { MdOutlineClose } from "react-icons/md"
 
 
-function SignInModal() {
+function SignInModalScreen() {
 
     const navigate = useNavigate()
 
@@ -30,4 +30,4 @@ function SignInModal() {
     )
 }
 
-export default SignInModal
+export default SignInModalScreen
