@@ -22,7 +22,7 @@ function Header() {
                     </li>
 
                     <li>
-                        <Link to='/sign-in' state={{ backgroundPath: location.pathname }} className="py-2 px-4 bg-black text-white hover:opacity-70">Sign in</Link>
+                        <Link to='/sign-in' state={{ backgroundPath: location.pathname }} className="py-2 px-4 bg-black text-white hover:opacity-70 transition">Sign in</Link>
                     </li>
                 </ul>
             </div>

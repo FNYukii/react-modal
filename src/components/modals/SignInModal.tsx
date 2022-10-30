@@ -16,7 +16,7 @@ function SignInModal() {
                 <input type="text" placeholder="Password" className="mt-5 w-full p-2 border"/>
 
                 <div className="mt-5 flex justify-end">
-                    <button className="py-2 px-4 bg-black text-white hover:opacity-70">Sign in</button>
+                    <button className="py-2 px-4 bg-black text-white hover:opacity-70 transition">Sign in</button>
                 </div>
             </div>
         </div>
